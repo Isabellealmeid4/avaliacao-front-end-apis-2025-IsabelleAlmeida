@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <title>Login Posts</title>
+    <title>Página de Posts</title>
+    <link rel="stylesheet" href="../styles/posts.css">
 </head>
-
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
-<script src="../scripts/posts.js"></script>
+    <header>
+        <h1>Bem vindo</h1>
+        <button id="botaoSair">Sair</button>
+    </header>
 
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Pesquisar posts por título...">
+        </div>
+
+    <main>
+        <p>Carregando posts...</p>
+    </main>
+    
+    <div id="postModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-button">&times;</button>
+            <h2 id="modalPostTitle"></h2>
+            <p id="modalPostContent"></p>
+        </div>
+    </div>
+
+    <script src="../scripts/posts.js"></script>
+</body>
 </html>
